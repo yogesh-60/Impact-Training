@@ -1,0 +1,106 @@
+array: collection of similar kind of data in continuous allocation
+ in c and c ++ we have pointers, definitely elements will be stored in continuous format.
+
+in Java , we don't have pointers, then there is a chance of elements might store in random places.
+
+syntax:
+data type [] array_name = new int[5]
+(or) int[] oneDArray = {1, 2, 3, 4, 5};
+
+
+primitive and non-primitive:
+primitive data types can't be splitted or divided .
+ex: int, float , char..
+non-primitive data types can be divided .
+ex: string, array and all the objects that are created by the user.
+
+class node{
+int data;
+node next;
+}
+
+-->All the objects will be stored in heap memory
+-->All the references will be stored in stack memory
+-->stack memory contains less space compare to heap
+
+
+-->All the varaibles having same data types storing in different variables, instead we can store in single variable by using array.
+-->If we, create multiple variables to get the data we need to print the all multiple variables, when it comes to array , if we want to print the array we can print using index values and by default index values will start from 0.
+
+
+Camel case and Snake case:
+
+in java, we  know that it is a case sensitive programming language, in snake case we use special characters like" _", etc
+in camelcase, we write second name starting letter as capital letter like ex:arrayName 
+in java , it is preferable to write production level code
+
+class Main {
+    public static void main(String[] args) {
+        datatype[] arrayname;
+    
+        
+        
+    }
+    void additionOfTwoNumbers(){
+        
+    }
+}
+
+
+
+type of printing comments:
+
+class Main {
+    public static void main(String[] args) {
+     int arr[]={1,2,3,4,5};
+    // for (int i=0;i<arr.length;i++){
+      //   System.out.println(arr[i]+" ");}
+       for(int i:arr){
+           System.out.println(i+" ");
+      
+     }
+        
+    }
+   
+}
+
+
+--> in for each loop we don't need index values
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+     int arr[]={1,2,3,4,5};
+   
+       System.out.println(Arrays.toString(arr));
+        
+    }
+     
+        
+   
+}
+
+--> toString is an inbuilt method to print an array.
+-->toString can accept only one argument and that too array.
+
+
+declaring the size of an array and intializing the values later:
+
+--> Array having fixed size , if we declare an array size it cannot be changed.
+class Main {
+    public static void main(String[] args) {
+     int arr[]=new int[5];
+  
+      
+        
+    }
+   
+}
+
+--> with the help of new keyword actual object will be created in the heap memory,for that particular data type and size.
+--> if the array is an integer without intialization, the default values will be 0's.
+--> If it is a string all the default values are null, and null is literal.
+
+
+whenever you are trying to assign por trying to get nth value of array, you will get an exception called array out of bonds.
+
