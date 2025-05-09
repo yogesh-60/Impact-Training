@@ -1,0 +1,33 @@
+static block and constructor:
+
+constructor are used to initialize the objects.
+
+--> for every class, there will be a default constructor, whenever we create an object constructor will be called , then object will be created.
+
+--> Constructor having class name and method properties
+
+
+Static block:
+
+
+public class q2{
+	public static void main(String[] args){
+		Demo d1=new Demo();
+		Demo d2=new Demo();
+			}
+		}
+class Demo{
+static{
+	System.out.println("static block");
+	}
+Demo(){
+	System.out.println("constructor");
+	}
+
+
+
+--> static block can be created with "static" keyword
+--> it will be called automatically
+--> no need to call, either object or class
+
+-->for static method, no need to call with object you can directly call with class name and here static will act as instance (or) object
